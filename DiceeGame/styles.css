@@ -45,3 +45,7 @@ footer {
   font-size: 2.5rem;
   color: #FFC300;
 }
+
+span {
+  display: block;
+}
