@@ -14,7 +14,7 @@ body {
 }
 
 #navigation {
-    background-color: #e74c3c;
+    background-color: #3DA4AB;
     padding: 20px 10px;
     z-index: 100;
     width: 100%;
@@ -103,7 +103,7 @@ body {
 .skillsSection,
 .contactSection,
 .timelineSection {
-    background-color: #e74c3c;
+    background-color: #3DA4AB;
     color: #fff;
 }
 
@@ -367,8 +367,8 @@ body {
 }
 
 .copyrightSection {
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     padding: 30px 5px;
 }
 
