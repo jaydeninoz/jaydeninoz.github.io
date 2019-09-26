@@ -112,7 +112,7 @@ function startAction(){
         $("#startreset").html("START GAME"); // change button to start game
         $("#gameOver").show();
         $("#gameOver").html('<p>Game Over!</p><p>Your score is ' + score + '</p>');
-        $("trialsLeft").hide();
+        $("#trialsLeft").hide();
         stopAction();
         $("#hahaha")[0].play(); // play sound
       }
