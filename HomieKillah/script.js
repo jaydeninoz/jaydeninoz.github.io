@@ -3,7 +3,6 @@ var score;
 var trialsLeft;
 var action;
 var level = 1;
-var fruits = ['banana', 'grapes', 'mango', 'orange', 'peach', 'pear', 'pinapple', 'watermelon'];
 var homies = ['diep1', 'diep2', 'khang', 'minh', 'nghia', 'nhan1', 'nhan2', 'tony1', 'tony2', 'ty', 'vincent1', 'vu1', 'vu2', 'vuty'];
 // Click on start reset button
 
@@ -73,7 +72,7 @@ $("#fruit1").mouseover(function(){
 function addHearts(){
   $("#trialsLeft").empty();
   for (var i = 0; i < trialsLeft; i++) {
-    $("#trialsLeft").append('<img src="images/heart.png" class="life" alt="heart">');
+    $("#trialsLeft").append('<img src="homies/heart.png" class="life" alt="heart">');
   }
 }
 
