@@ -1,0 +1,223 @@
+/*styling.css*/
+html{
+    height: 100%;
+    background-color: #CEDFD9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#containerr{
+    height: 600px;
+    width: 750px;
+    background-color: #F5DD90;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 0px 0px #009de4;
+    -moz-box-shadow: 0px 4px 0px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 0px 0px #009de4;
+/*        box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]*/
+    position: relative;
+}
+
+.intro {
+    position: absolute;
+    top: 15px;
+    color: #e75c5c;
+    left: 30%;
+}
+
+#score{
+    background-color: #F76C5E;
+    color: white;
+    padding: 11px;
+    position: absolute;
+    left: 680px;
+    border-radius: 8px;
+
+}
+
+#correct{
+    position: absolute;
+    left: 260px;
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#wrong{
+    position: absolute;
+    left: 250px;
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
+#fruitsContainer{
+    width: 650px;
+    height: 400px;
+    margin: 50px auto 10px auto;
+    /* background-color: #205768; */
+    background-color: white;
+    
+    z-index: 5;
+    box-shadow: 0px 4px #535aa8;
+    -moz-box-shadow: 0px 4px #535aa8;
+    -webkit-box-shadow: 0px 4px #535aa8;
+    font-size: 100px;
+    text-align: center;
+    font-family: cursive, sans-serif;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+
+#instruction{
+    width: 450px;
+    height: 50px;
+    background-color: #77CDCC;
+    color: white;
+    margin: 10px auto;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 8px;
+}
+
+.level:hover {
+    font-size: 1.5rem;
+    transition: 0.4s;
+}
+
+.active {
+    color: red;
+    font-size: 1.2rem;
+}
+
+#choices{
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box{
+    width: 85px;
+    height: 85px;
+    background-color: white;
+    float: left;
+    margin-right: 36px;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 80px;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+.box:hover, #startreset:hover{
+/*    background-color: #9C89F6;*/
+/*    color: white;*/
+/*    box-shadow: 0px 4px #6b54d3;*/
+/*    -moz-box-shadow: 0px 4px #6b54d3;*/
+/*    -webkit-box-shadow: 0px 4px #6b54d3;*/
+}
+
+.box:active, #startreset:active{
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 0px #6b54d3;
+    -moz-box-shadow: 0px 0px #6b54d3;
+    -webkit-box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+#box4{
+    margin-right: 0;
+}
+
+#startreset{
+    width: 78px;
+    padding: 20px;
+    background-color: #EF2E2D;
+    color: white;
+    margin: 0 auto;
+    border-radius: 3px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    background-image: url(./homies/diep-button.jpg);
+    background-size: cover;
+    opacity: 0.6;
+}
+
+#trialsLeft{
+    width: 80px;
+    padding: 10px;
+    position: absolute;
+    background-color: #F1FF92;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+/*    visibility: hidden;*/
+    display: none;
+}
+
+#gameOver{
+    height: 250px;
+    width: 500px;
+     
+    background: linear-gradient(#F3CA6B, #F3706C);
+    background: -webkit-linear-gradient(#F3CA6B, #F3706C);
+    background: -o-linear-gradient(#F3CA6B, #F3706C);
+    background: -moz-linear-gradient(#F3CA6B, #F3706C);
+    background-image: url(./homies/tony-gameover.png); 
+    background-size: cover; 
+    /* background-color: #BADEFC; */
+    color: #0D273A;
+    font-weight: 800;
+    font-size: 2.5em;
+    text-align: left;
+    /* padding-left: 1.5rem; */
+    text-transform: uppercase;
+    position: absolute;
+    top: 170px;
+    left: 145px;
+    z-index: 20;
+    display: none;
+    border-radius: 8px;
+    
+    
+}
+
+
+.life {
+  width: 16px;
+  height: 16px;
+  margin: 0 5px;
+}
+
+.fruit {
+  display: none;
+  position: absolute;
+  z-index: 50 !important; 
+  opacity: 1.0 !important;
+}
+
+#doraemon {
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
+}

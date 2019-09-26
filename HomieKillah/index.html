@@ -1,0 +1,63 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fruit Ninja</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+        <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> -->
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    </head>
+
+    <body>
+        <div id="containerr">
+            <p class="intro">Slice your mouse (without click) to kill the homie</p>
+            <div id="score">
+                Score: <span id="scorevalue">0</span>
+            </div>
+            <div id="trialsLeft">
+            </div>
+            <div id="correct">
+                Correct
+            </div>
+            <div id="wrong">
+                Try again
+            </div>
+            <div id="fruitsContainer">
+                <img src="homies/doraemon.jpg" id="doraemon" alt="">
+              <img id="fruit1" class="fruit">
+            </div>
+            <div id="instruction">
+                
+                <span class="level active" id="easy"> Easy</span>
+                -
+                <span class="level" id="medium"> Medium </span>
+                -
+                <span class="level" id="hard"> Hard </span>
+            </div>
+            <div id="startreset">
+                <span style="opacity: 1">START GAME</span> 
+            </div>
+
+            <div id="gameOver">
+                <img src="./homies/tony-gameover.png" id="tony-gameover" alt="">
+                
+            </div>
+        </div>
+        <audio id="slicesound">
+          <source src="audio/Humi1013.mp3"></source>
+          <source src="audio/slicefruit.mp3"></source>
+          <source src="audio/hahaha.mp3"></source>
+        </audio>
+        <audio id="hahaha">     
+            <source src="audio/hahaha.mp3"></source>
+            <source src="audio/Humi1013.mp3"></source>
+            <source src="audio/slicefruit.mp3"></source>
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
